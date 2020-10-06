@@ -1,0 +1,223 @@
+@charset "UTF-8";
+/*共通部分
+ーーーーーーーーーーーーー*/
+html {
+  font-size: 100%;
+}
+body {
+  font-family: "Yu Gothic Medium", "游ゴシック　Medium", "YuGothic",
+    "游ゴシック体", "ヒラギノ角ゴPro W3", sans-serif;
+  line-height: 1.7;
+  color: white;
+  background-color: #432;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+img {
+  max-width: 100%;
+}
+/*HEADER
+－－－－－－－－－*/
+.logo {
+  width: 100px;
+  margin-top: 14px;
+}
+
+.main-nav {
+  display: flex;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  margin-top: 34px;
+  list-style: none;
+}
+
+.main-nav li {
+  margin-left: 36px;
+}
+
+.main-nav a {
+  color: white;
+}
+
+.main-nav a:hover {
+  color: #0bd;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+/*HOME
+ーーーーーーーーーーーーー*/
+.home-content {
+  text-align: center;
+  margin-top: 10%;
+}
+.home-content p {
+  font-size: 1.525rem;
+  margin: 10px 0 42px;
+}
+
+/* 見出し */
+.page-title {
+  font-size: 4rem;
+  font-family: "Philosopher", serif;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+/* ボタン */
+.button {
+  font-size: 1.375rem;
+  background: #0bd;
+  color: #fff;
+  border-radius: 5px;
+  padding: 18px 32px;
+}
+
+.button:hover {
+  background: #0090aa;
+}
+
+/* 大きな画像 */
+.big-bg {
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+#home {
+  background-image: url(../images/appearance.jpg);
+  min-height: 100vh;
+}
+
+#home .page-title {
+  text-transform: none;
+}
+
+/*フッター
+ーーーーーーーーーーーー*/
+footer {
+  background: #432;
+  text-align: center;
+  padding: 26px;
+}
+
+footer p {
+  color: #fff;
+  font-size: 0.875rem;
+}
+
+
+/*　MENU*/
+#menu {
+  background-image: url(../images/coffee-2379754_960_720.jpg);
+  min-height: 100vh;
+}
+.menu-content {
+  max-width: 560px;
+  margin-top: 10%;
+}
+
+.menu-content .page-title {
+  text-align: center;
+}
+
+.menu-content P {
+  font-size: 1.125rem;
+  margin: 10px 0 0;
+}
+
+.grid {
+  display: grid;
+  gap: 26px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin-top: 6%;
+  margin-bottom: 50px;
+}
+
+/* 画像の大きさを揃える  */
+.thumbnail {
+  display: inline-block;
+  height: 100%;
+  margin-right: 15px;
+  margin-bottom: 0;
+  font-size: 1.8rem;
+}
+.thumbnail img {
+  width: 250px; 
+  height: 250px;
+  object-fit: cover;
+ } 
+
+/* MAP */
+
+#map {
+  background-image: url(../images/MAP1.jpg);
+}
+
+/*店舗情報*/
+
+#location {
+  padding: 4% 0;
+}
+
+#location .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.location-info {
+  width: 22%;
+}
+
+.location-info p {
+  padding: 12px 10px;
+}
+
+.location-map {
+  width: 74%;
+}
+
+/*iframe*/
+
+iframe {
+  width: 100%;
+}
+
+.sns-box {
+  width: 30%;
+}
+@media (max-width: 600px) {
+  h1 {
+    color: #0bd;
+  }
+  .page-title {
+    font-size: 2.5rem;
+  }
+
+  /* HEADER */
+  .main-nav {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+
+  .main-nav li {
+    margin: 0 20px;
+  }
+  /* MENU */
+  .menu-content {
+    margin-top: 20%;
+  }
+}
